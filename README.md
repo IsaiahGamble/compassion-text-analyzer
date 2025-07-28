@@ -9,7 +9,7 @@ This project contains tools to analyze emotional and compassionate content in te
 
 ## Usage
 
-1. Put your `.docx` files in `Texts Used/` folder.
+1. Put your `.docx` and `.txt` files in `Texts Used/` folder.
 2. Run analysis scripts:
 
 ```bash
