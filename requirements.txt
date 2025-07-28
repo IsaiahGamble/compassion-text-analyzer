@@ -1,0 +1,10 @@
+pandas==2.3.1
+vaderSentiment==3.3.2
+empath==0.89
+transformers==4.51.3
+torch==2.1.0+cpu
+tqdm==4.67.1
+python-docx==1.2.0
+matplotlib==3.10.3
+seaborn==0.13.2
+numpy==1.26.4
