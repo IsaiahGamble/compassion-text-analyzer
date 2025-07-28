@@ -15,5 +15,5 @@ This project contains tools to analyze emotional and compassionate content in te
 ```bash
 python txtAndDocxSentimentAnalysisTool.py
 
-## visualize with
+## visualize with. NOTE: Not all emotions are generated every time, you may have to edit the columns_of_interest list
 python VisualizeTheSentimentAnalysis.py
