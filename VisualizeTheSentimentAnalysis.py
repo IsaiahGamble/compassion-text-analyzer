@@ -5,6 +5,7 @@ import numpy as np
 from pathlib import Path
 
 CSV_TO_VISUALIZE = "text_analysis_output.csv"
+FIGURESIZE = (12,7)
 
 # Load CSV
 base_dir = Path(__file__).resolve().parent
@@ -56,7 +57,7 @@ iqr = q3 - q1
 
 x = np.arange(len(columns_of_interest))
 
-plt.figure(figsize=(12, 7))
+plt.figure(figsize=FIGURESIZE)
 plt.bar(x, medians, yerr=iqr, capsize=5, color="skyblue")
 plt.xticks(x, columns_of_interest, rotation=45, ha="right")
 plt.ylabel("Score")
@@ -64,7 +65,7 @@ plt.title("Median Scores with IQR as Error Bars")
 plt.tight_layout()
 plt.show()
 
-plt.figure(figsize=(14, 8))
+plt.figure(figsize=FIGURESIZE)
 sns.boxplot(data=df[columns_of_interest], orient="h")
 plt.title("Inter-quartile Range with Highest & Lowest Non-Outliers as Error Bars, Marking the Median and Outliers")
 plt.xlabel("Score")
